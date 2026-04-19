@@ -109,11 +109,3 @@ Project Outcome
 * Demonstrated strong SQL and analytical thinking
 * Created portfolio-ready project for data analyst roles
 
----
-
-Future Improvements
-
-* Power BI dashboard for visualization
-* Python integration for automation and reporting
-* Predictive model for delivery time estimation
-* Real-time streaming data simulation
