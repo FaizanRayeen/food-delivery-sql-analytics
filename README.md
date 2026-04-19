@@ -1,111 +1,103 @@
-Food Delivery Analytics Project (PostgreSQL)
+# Food Delivery Analytics Project (PostgreSQL)
 
-Project Overview
-This project is a food delivery analytics system built using PostgreSQL. It simulates a real-world platform similar to Zomato/Swiggy and focuses on data modeling and SQL-based analysis.
+## Project Overview
+This project is a food delivery analytics system built using PostgreSQL.  
+It simulates a real-world platform similar to Zomato/Swiggy and focuses on data modeling and SQL-based business analysis.
 
-The main objective is to analyze customer behavior, restaurant performance, delivery efficiency, and revenue trends using structured SQL queries.
-
----
-
-Database Design
-
-The project is built using a relational schema with five tables:
-
-* customers: stores customer details such as customer_id, name, and city
-* restaurants: stores restaurant information including cuisine type and location
-* orders: contains order-level data with customer_id, restaurant_id, order_date, and status
-* order_items: contains item-level details of each order including price and quantity
-* deliveries: stores delivery details such as delivery_time and rating
+The objective is to analyze customer behavior, restaurant performance, delivery efficiency, and revenue trends using structured SQL queries.
 
 ---
 
-Dataset Summary
+## Database Design
 
-* Customers: 100 records
-* Restaurants: 50 records
-* Orders: 200 records
-* Order Items: 400 records
-* Deliveries: 200 records
+The system is built using a relational schema consisting of five core tables:
 
----
-
-Key Analysis Performed
-
-Customer Analysis
-
-* Identified top customers based on total spending
-* Analyzed order frequency patterns
-
-Restaurant Analysis
-
-* Found top-performing restaurants based on orders and revenue
-* Compared performance across cuisines
-
-City-Level Analysis
-
-* Measured order distribution across different cities
-* Identified high-demand locations
-
-Revenue Analysis
-
-* Calculated total revenue and restaurant-wise contribution
-* Identified top revenue-generating restaurants
-
-Delivery Analysis
-
-* Calculated average delivery time
-* Classified deliveries into Fast, Medium, and Slow categories
-* Analyzed customer ratings distribution
-
-Customer Behavior Analysis
-
-* Studied repeat ordering patterns using LAG function
-* Calculated customer lifetime value (CLV)
-
-Trend Analysis
-
-* Monthly order trends
-* Running revenue growth over time
+- **customers**: Stores customer information such as customer_id, name, and city  
+- **restaurants**: Stores restaurant details including cuisine type and location  
+- **orders**: Contains order-level information including customer_id, restaurant_id, order_date, and status  
+- **order_items**: Stores item-level order details including price and quantity  
+- **deliveries**: Stores delivery performance data including delivery_time and rating  
 
 ---
 
-SQL Concepts Used
+## Dataset Summary
 
-* Basic SQL operations: SELECT, WHERE, ORDER BY, GROUP BY
-* Joins: INNER JOIN across multiple tables
-* Aggregations: SUM, COUNT, AVG
-* Conditional logic: CASE WHEN
-* Subqueries and CTE (WITH clause)
-* Window functions:
-
-  * RANK()
-  * DENSE_RANK()
-  * LAG()
-  * OVER (PARTITION BY / ORDER BY)
+- Customers: 100 records  
+- Restaurants: 50 records  
+- Orders: 200 records  
+- Order Items: 400 records  
+- Deliveries: 200 records  
 
 ---
 
-Key Learnings
+## Key Analysis Performed
 
-* Designed a relational database from scratch
-* Generated and managed structured datasets
-* Applied SQL for real-world business analysis
-* Used advanced SQL functions for insights
-* Converted raw data into meaningful business metrics
+### Customer Analysis
+- Identification of top customers based on total spending  
+- Analysis of order frequency and purchasing behavior  
+
+### Restaurant Analysis
+- Top-performing restaurants based on order volume and revenue  
+- Performance comparison across different cuisines  
+
+### City-Level Analysis
+- Order distribution across cities  
+- Identification of high-demand geographic regions  
+
+### Revenue Analysis
+- Total revenue calculation  
+- Restaurant-wise revenue contribution analysis  
+- Identification of top revenue-generating restaurants  
+
+### Delivery Analysis
+- Average delivery time computation  
+- Classification of deliveries into Fast, Medium, and Slow categories  
+- Analysis of customer ratings distribution  
+
+### Customer Behavior Analysis
+- Repeat purchase behavior using window functions  
+- Customer Lifetime Value (CLV) estimation  
+
+### Trend Analysis
+- Monthly order trends  
+- Running revenue growth using window functions  
 
 ---
 
-Tools Used
+## SQL Concepts Used
 
-PostgreSQL
-
+- Basic SQL: SELECT, WHERE, ORDER BY, GROUP BY  
+- Joins: INNER JOIN across multiple tables  
+- Aggregate Functions: SUM, COUNT, AVG  
+- Conditional Logic: CASE WHEN  
+- Subqueries and Common Table Expressions (CTEs)  
+- Window Functions:
+  - RANK()  
+  - DENSE_RANK()  
+  - LAG()  
+  - OVER (PARTITION BY / ORDER BY)  
 
 ---
 
-Project Outcome
+## Key Learnings
 
-* Built an end-to-end data analytics project
-* Simulated real-world food delivery system
-* Demonstrated strong SQL and analytical thinking
-* Created portfolio-ready project for data analyst roles
+- Designed and implemented a relational database schema from scratch  
+- Generated structured datasets for analytics use cases  
+- Applied SQL for real-world business problem-solving  
+- Used advanced SQL techniques for analytical insights  
+- Transformed raw transactional data into meaningful KPIs  
 
+---
+
+## Tools Used
+
+- PostgreSQL  
+
+---
+
+## Project Outcome
+
+- Developed an end-to-end SQL analytics project  
+- Simulated a real-world food delivery platform  
+- Demonstrated strong SQL, data modeling, and analytical skills  
+- Built a portfolio-ready project suitable for data analyst roles  
